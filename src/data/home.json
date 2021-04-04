@@ -1,0 +1,14 @@
+{
+    "pageTitle":"Home Page", 
+    "modules":{
+        "hero":{
+            "title":"",
+            "classes":"hero-primary",
+            "img":{
+                "src":"https://assets.entrepreneur.com/content/3x2/2000/1607440354-GettyImages-12266819441.jpg",
+                "alt":"DBT"
+            },
+            "body":"<h4>This is header</h4><p>lorem ipsum</p><a href='#' class='btn btn-primary'>Click here</a>"
+        }
+    }
+}

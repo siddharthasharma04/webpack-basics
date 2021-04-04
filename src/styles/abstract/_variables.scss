@@ -1,0 +1,30 @@
+// Typo
+
+$font-size: 16px;
+
+$font-family: 'Montserrat', sans-serif;
+
+// Colors
+
+$grey: #ccc;
+$light-grey: #eee;
+
+$white:#f7f7f7;
+
+$appColor: #2700ff;
+$secondary: #dd2222;
+
+$dark: #121212;
+
+$btn: (
+    primary: (
+      normal: $appColor,
+      hover: darken($appColor, 15%),
+    ),
+  ),
+  (
+    secondary: (
+      normal: $secondary,
+      hover: darken($secondary, 15%),
+    ),
+  );

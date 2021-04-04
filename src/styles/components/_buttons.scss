@@ -1,0 +1,38 @@
+@use '../abstract' as *;
+@use 'sass:list';
+
+.btn {
+  border: none;
+  outline: none;
+  display: inline-block;
+  line-height: 1.5;
+  padding: 0.5rem 1.5rem;
+  border-radius: 3rem;
+  text-align: center;
+  background-color: $light-grey;
+  transition: all 350ms ease-in-out;
+  font-weight: 500;
+  font-size: 1rem;
+  user-select: none;
+
+  &:not(:disabled),
+  &:not(.disabled) {
+    cursor: pointer;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $grey;
+  }
+  @each $key,$type in $btn {
+    // @each $v in $key {
+        &-#{list.nth($key,1)} {
+            background-color: list.nth(list.nth(list.nth($key,2),1),2);
+            color: $white;
+            &:hover,&:focus{
+                background-color: list.nth(list.nth(list.nth($key,2),2),2);
+            }
+          }
+    // }
+  }
+}

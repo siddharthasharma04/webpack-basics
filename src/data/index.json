@@ -1,0 +1,9 @@
+{
+    "pageTitle":"INDEX Page",
+    "modules":{
+        "textMain":{
+            "header":"This is header of text component",
+            "body":"<p>This is main body <strong>container</strong>.</p><p>It would contain all body content</p><p><button class='btn btn-primary'>Click Me</button></p>"
+        }
+    }
+}
